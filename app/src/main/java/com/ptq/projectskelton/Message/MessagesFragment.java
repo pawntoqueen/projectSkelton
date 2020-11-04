@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.ptq.projectskelton.R;
-import com.ptq.projectskelton.login.LoginActivity;
+import com.ptq.projectskelton.Login.LoginActivity;
 
 public class MessagesFragment extends Fragment {
     private static final String TAG = "MessagesFragment";
@@ -22,8 +22,11 @@ public class MessagesFragment extends Fragment {
         Button btnKaydol ;
         View view = inflater.inflate(R.layout.fragment_mesajlar, container, false);
         btnKaydol = view.findViewById(R.id.register_button);
-        btnKaydol.setOnClickListener(v -> startActivity(new Intent(getContext(), LoginActivity.class)));
-
+        btnKaydol.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        });
         return view;
     }
 }

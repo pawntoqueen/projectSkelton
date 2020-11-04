@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectSkelton">
-        <activity android:name=".login.LoginActivity"></activity>
+        <activity android:name=".Login.LoginActivity"></activity>
         <activity android:name=".Home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
