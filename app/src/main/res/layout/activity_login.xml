@@ -10,10 +10,10 @@ tools:context=".Login.LoginActivity">
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/giris"
-    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical"
     android:padding="20dp">
 
     <TextView
@@ -23,10 +23,6 @@ tools:context=".Login.LoginActivity">
         android:layout_marginBottom="20dp"
         android:text="Kullanıcı Giriş"
         android:textColor="@color/black" />
-
-
-
-
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -82,14 +78,12 @@ tools:context=".Login.LoginActivity">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="70dp"
+        android:paddingBottom="20dp"
         android:weightSum="1">
 
         <Button
-            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:background="@drawable/button_border"
             android:text="Giriş"
             android:textColor="@color/black"
@@ -107,14 +101,82 @@ tools:context=".Login.LoginActivity">
             android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:background="@drawable/button_border"
             android:text="Kayıt"
             android:textColor="@color/black"
             android:textSize="14sp"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="  veya "
+            android:textColor="@color/grey"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:text="google girişi"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_weight="0.5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="      "
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:text="Facebook girişi"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_weight="0.5"
+            />
+
+    </LinearLayout>
+
+
 
 </LinearLayout>
 
